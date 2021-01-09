@@ -1,0 +1,630 @@
+#Шапка {
+    position: absolute;
+    width: 1476px;
+    height: 76px;
+    left: 0px;
+    top: 0px; 
+    background: linear-gradient(106.99deg, rgba(0, 8, 203, 0.324) 33.06%, rgba(0, 172, 209, 0) 57.69%), #23B516;
+    cursor: default
+}
+#Футер{
+position: absolute;
+width: 1476px;
+height: 200px;
+left: 0px;
+top: 1800px;
+background: linear-gradient(180deg, #FFFFFF 0%, #23B516 100%), #23B516;
+cursor: default
+}
+#СайтВизитка{
+position: absolute;
+width: 297px;
+height: 56px;
+left: 92px;
+top: 20px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+
+color: rgba(130, 255, 119, 0.5);
+}
+#НомерТелефона{
+position: absolute;
+width: 324px;
+height: 56px;
+left: 987px;
+top: 16px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 56px;
+
+color: rgba(0, 0, 0, 0.3);
+transition: all 1s; 
+}
+#VK{
+position: absolute;
+width: 72px;
+height: 72px;
+left: 1347px;
+top: 2px;
+
+font-family: Tahoma;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 43px;
+
+color: rgba(48, 0, 186, 0.8);
+
+background: linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF;
+border-radius: 36px;
+cursor: pointer
+}
+#ТекстВК{
+position: absolute;
+width: 50px;
+height: 43px;
+left: 11px;
+top: 15px;
+
+font-family: Tahoma;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 43px;
+
+color: rgba(48, 0, 186, 0.8);
+}
+#РабочаяОбласть{
+position: absolute;
+width: 1100px;
+height: 2000px;
+left: (100% - 1100)/2;
+top: 0px;
+}
+#ПоследнийКомментарий{
+position: absolute;
+width: 991px;
+height: 105px;
+left: 240px;
+top: 47px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+
+color: rgba(0, 0, 0, 0.8);
+}
+#Облако{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 1050px;
+    top: 28px;
+    
+    background: linear-gradient(180deg, rgba(35, 181, 22, 0.65) 0%, #57FF49 80%), #FFFFFF;
+    border-radius: 36px;
+    cursor: pointer
+}
+#ОблакоIMG{
+position: absolute;
+width: 62px;
+height: 60px;
+left: 5px;
+top: 6px;
+}
+#Фото{
+position: absolute;
+width: 300px;
+height: 300px;
+left: 200px;
+top: 200px;
+
+background: #6BBBE8;
+border-radius: 40px;
+}
+#ИЕМ{
+position: absolute;
+width: 753px;
+height: 75px;
+left: 547px;
+top: 200px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 75px;
+
+color: #000000;
+}
+#ЛичнаяИнфа{
+position: absolute;
+width: 482px;
+height: 133px;
+left: 547px;
+top: 304px;
+}
+#ДР{
+    position: absolute;
+    width: 327px;
+    height: 21px;
+    left: 27px;
+    top: 15px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+}
+#Адрес{
+    position: absolute;
+    width: 343px;
+    height: 21px;
+    left: 27px;
+    top: 44px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;    
+}
+#СемейноеПоложение{
+    position: absolute;
+    width: 271px;
+    height: 21px;
+    left: 27px;
+    top: 73px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+}
+#e-mail{
+    position: absolute;
+    width: 213px;
+    height: 21px;
+    left: 27px;
+    top: 102px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+}
+#line1{
+position: absolute;
+width: 1500px;
+height: 0px;
+left: 0px;
+top: 572px;
+
+border: 10px solid #075300;
+}
+#line2{
+    position: absolute;
+    width: 1500px;
+    height: 0px;
+    left: -4px;
+    top: 1143px;
+    
+    border: 10px solid #075300;
+}
+#Образование{
+    position: absolute;
+    width: 509px;
+    height: 56px;
+    left: 200px;
+    top: 620px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #000000;
+}
+#Специальность{
+    position: absolute;
+    width: 1034px;
+    height: 28px;
+    left: 200px;
+    top: 712px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #000000;
+}
+#ОпытРаботы{
+position: absolute;
+width: 1031px;
+height: 56px;
+left: 199px;
+top: 776px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+#Языки{
+    position: absolute;
+    width: 323px;
+    height: 28px;
+    left: 200px;
+    top: 868px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #000000;
+}
+#ВладениеКомпьютером{
+    position: absolute;
+    width: 1062px;
+    height: 28px;
+ 
+    left: 199px;
+    top: 932px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #000000;
+}
+#ЛичныеКачества{
+    position: absolute;
+    width: 922px;
+    height: 56px;
+    left: 199px;
+    top: 996px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #000000;
+}
+#МоиРаботы{
+    position: absolute;
+width: 219px;
+height: 42px;
+left: 200px;
+top: 1188px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+}
+#PingPong{
+    position: absolute;
+    width: 212px;
+    height: 34px;
+    left: 238px;
+    top: 1256px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+}
+#GreatOak{
+    position: absolute;
+    width: 191px;
+    height: 42px;
+    left: 654px;
+    top: 1256px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+}
+#ОбъединениеЛаб{
+    position: absolute;
+    width: 354px;
+    height: 42px;
+    left: 970px;
+    top: 1256px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+#MainCraft{
+    position: absolute;
+    width: 289px;
+    height: 38px;
+    left: 238px;
+    top: 1496px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;
+}
+#Calculator{
+    position: absolute;
+    width: 229px;
+    height: 38px;
+    left: 654px;
+    top: 1496px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;    
+}
+#Polybius
+{
+    position: absolute;
+    width: 262px;
+    height: 38px;
+    left: 1000px;
+    top: 1496px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;
+}
+#IMG1{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 280px;
+    top: 1312px;
+    border: 2px solid #075300;
+    background: #6BBBE8;
+    border-radius: 20px;
+    cursor: pointer
+}
+#IMG2{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 686px;
+    top: 1312px;
+    border: 2px solid #075300;
+    background: #6BBBE8;
+    border-radius: 20px;
+    cursor: pointer
+}
+#IMG3{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 1068px;
+    top: 1312px;
+    border: 2px solid #075300;
+    background: #6BBBE8;
+    border-radius: 20px;
+    cursor: pointer
+}
+#IMG4{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 280px;
+    top: 1553px;
+    border: 2px solid #075300;
+    background: #6BBBE8;
+    border-radius: 20px;
+    cursor: pointer
+}
+#IMG5{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 686px;
+    top: 1553px;
+    border: 2px solid #075300;
+    background: #6BBBE8;
+    border-radius: 20px;
+    cursor: pointer
+}
+#IMG6{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 1068px;
+    top: 1553px;
+    border: 2px solid #075300;
+    background: #6BBBE8;
+    border-radius: 20px;
+    cursor: pointer
+}
+#Lang1{
+    position: absolute;
+    width: 196px;
+    height: 128px;
+    left: -34px;
+    top: 0px;
+    opacity: 0.05;
+    transition: all 2s;
+}
+#Lang2{
+    position: absolute;
+    width: 196px;
+    height: 128px;
+    left: -34px;
+    top: 0px;
+    opacity: 0.05;
+    transition: all 2s;
+}
+#Lang3{
+    position: absolute;
+    width: 228px;
+    height: 164px;
+    left: -51px;
+    top: -14px;
+    opacity: 0.05;
+    transition: all 2s;
+    mix-blend-mode: color-burn;
+}
+#Lang4{
+    position: absolute;
+    width: 196px;
+    height: 128px;
+    left: -34px;
+    top: 0px;
+    opacity: 0.05;
+    transition: all 2s;
+}
+#Lang5{
+    position: absolute;
+    width: 196px;
+    height: 128px;
+    left: -34px;
+    top: 0px;
+    opacity: 0.05;
+    transition: all 2s;
+}
+#Lang6{
+    position: absolute;
+    width: 228px;
+    height: 164px;
+    left: -51px;
+    top: -14px;
+    opacity: 0.05;
+    transition: all 2s;
+    mix-blend-mode: color-burn;
+}
+.ICO{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 0px;
+    top: 0px;
+    transition: all 2s;
+}
+#БлокДанных{
+    opacity: 1;
+    transition: all 1s;
+}
+#БлокСкринов{
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+    width: 1500px;
+    height: 570px;
+    left: 0px;
+    top: 582px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.98) 0%, rgba(35, 181, 22, 0.98) 100%);
+    mix-blend-mode: normal;
+}
+#Exit{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 1268px;
+    top: 18px;
+    font-family: ROG Fonts;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+    cursor: default;
+    opacity: 0.3;
+    transition: all .3s;
+}
+#RightArrow{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 1300px;
+    top: 281px;
+    border: 10px solid rgba(0, 0, 0);
+    box-sizing: border-box;
+    opacity: 0.3;
+}
+#LeftArrow{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 200px;
+    top: 281px;
+    border: 10px solid rgba(0, 0, 0);
+    box-sizing: border-box;
+    transform: rotate(-180deg);
+    opacity: 0.3;
+}
+.Screens{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 258px;
+    top: 214px;
+    transition: all .3s;
+}
+#BlockHelper{
+    position: absolute;
+    width: 420px;
+    height: 236px;
+    left: 537px;
+    top: 161px;
+    transition: all .3s;
+    z-index: 1000;
+}
