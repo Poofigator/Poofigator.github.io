@@ -34,14 +34,14 @@ VK.onmouseover = () => {
     VK.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 100%), #FFFFFF';
     VK.style.width = '74px';
     VK.style.height = '74px';
-    VK.style.left = '1346px';
+    VK.style.left = 'calc(100% - (100% - 1100px)/2)-1px)';
     VK.style.top = '1px';
 }
 VK.onmouseout = () => {
     VK.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF';
     VK.style.width = '72px';
     VK.style.height = '72px';
-    VK.style.left = '1347px';
+    VK.style.left = 'calc(100% - (100% - 1100px)/2)';
     VK.style.top = '2px';
 }
 VK.onclick = () => {
@@ -63,14 +63,14 @@ Cloud.onmouseout = () => {
     Cloud.style.top = '28px';
 }
 Cloud.onclick = () => {
-    window.open('https://vk.com/poofigator'); // Поменять на ссылку облака
+    window.open('https://cloud.mail.ru/public/vYfe/6rHkyFqGX'); // Поменять на ссылку облака
 }
 
 MyNumber.onmouseover = () => {
     MyNumber.style.color = 'rgba(0, 0, 0, 0.7)';
 }
 MyNumber.onmouseout = () => {
-    MyNumber.style.color = 'rgba(0, 0, 0, 0.4)';
+    MyNumber.style.color = 'rgba(0, 0, 0, 0.3)';
 }
 
 IMG1.onmouseover = () => {
@@ -83,6 +83,8 @@ IMG1.onmouseout = () => {
 }
 IMG1.onclick = () => {
     RemoveData()
+    SlideshowStop()
+    SlideShow1()
 }
 
 IMG2.onmouseover = () => {
@@ -95,6 +97,8 @@ IMG2.onmouseout = () => {
 }
 IMG2.onclick = () => {
     RemoveData()
+    SlideshowStop()
+    SlideShow2()
 }
 
 IMG3.onmouseover = () => {
@@ -107,6 +111,7 @@ IMG3.onmouseout = () => {
 }
 IMG3.onclick = () => {
     RemoveData()
+    SlideshowStop()
     SlideShow3()
 }
 
@@ -120,6 +125,8 @@ IMG4.onmouseout = () => {
 }
 IMG4.onclick = () => {
     RemoveData()
+    SlideshowStop()
+    SlideShow4()
 }
 
 IMG5.onmouseover = () => {
@@ -132,6 +139,8 @@ IMG5.onmouseout = () => {
 }
 IMG5.onclick = () => {
     RemoveData()
+    SlideshowStop()
+    SlideShow5()
 }
 
 IMG6.onmouseover = () => {
@@ -144,6 +153,8 @@ IMG6.onmouseout = () => {
 }
 IMG6.onclick = () => {
     RemoveData()
+    SlideshowStop()
+    SlideShow6()
 }
 
 function RemoveData(){
@@ -165,12 +176,17 @@ Exit.onmouseout = () => {
 }
 Exit.onclick = () => {
     ShowData()
+    SlideshowStop()
+}
+
+function SlideshowStop(){
     while (n > 0){
         n--
-        Block3Screen[n].style.width = '0px';
-        Block3Screen[n].style.height = '0px';
-        Block3Screen[n].style.left = '258px';
-        Block3Screen[n].style.top = '214px';
+        Blocks[m][n].style.width = '0px';
+        Blocks[m][n].style.height = '0px';
+        Blocks[m][n].style.left = '258px';
+        Blocks[m][n].style.top = '214px';
+
         BlockHelper.style.width = '0px';
         BlockHelper.style.height = '0px';
     }
@@ -185,7 +201,7 @@ RightArrow.onmouseout = () => {
     RightArrow.style.opacity = .3;
 }
 RightArrow.onclick = () => {
-    window.SwipeRight();
+    SwipeRight();
 }
 LeftArrow.onmouseover = () => {
     LeftArrow.style.opacity = .6;
@@ -194,84 +210,148 @@ LeftArrow.onmouseout = () => {
     LeftArrow.style.opacity = .3;
 }
 LeftArrow.onclick = () => {
-    window.SwipeLeft();
+    SwipeLeft();
 }
+const Block1Screen = [document.getElementById('Block1Screen1'), 
+document.getElementById('Block1Screen2'), document.getElementById('Block1Screen3'), 
+document.getElementById('Block1Screen4')];
+const Block2Screen = [document.getElementById('Block2Screen1'), 
+document.getElementById('Block2Screen2'), document.getElementById('Block2Screen3'), 
+document.getElementById('Block2Screen4'), document.getElementById('Block2Screen5'), 
+document.getElementById('Block2Screen6'), document.getElementById('Block2Screen7'), 
+document.getElementById('Block2Screen8')];
 const Block3Screen = [document.getElementById('Block3Screen1'), 
 document.getElementById('Block3Screen2'), document.getElementById('Block3Screen3'), 
 document.getElementById('Block3Screen4'), document.getElementById('Block3Screen5'), 
 document.getElementById('Block3Screen6'), document.getElementById('Block3Screen7'), 
 document.getElementById('Block3Screen8')];
-var n;
+const Block4Screen = [document.getElementById('Block4Screen1'), 
+document.getElementById('Block4Screen2'), document.getElementById('Block4Screen3'), 
+document.getElementById('Block4Screen4'), document.getElementById('Block4Screen5'), 
+document.getElementById('Block4Screen6'), document.getElementById('Block4Screen7'), 
+document.getElementById('Block4Screen8'), document.getElementById('Block4Screen9'), 
+document.getElementById('Block4Screen10'), document.getElementById('Block4Screen11'), 
+document.getElementById('Block4Screen12'), document.getElementById('Block4Screen13')];
+const Block5Screen = [document.getElementById('Block5Screen1'), 
+document.getElementById('Block5Screen2'), document.getElementById('Block5Screen3'), 
+document.getElementById('Block5Screen4')];
+const Block6Screen = [document.getElementById('Block6Screen1'), 
+document.getElementById('Block6Screen2'), document.getElementById('Block6Screen3'), 
+document.getElementById('Block6Screen4')];
+const Blocks = [Block1Screen, Block2Screen, Block3Screen, Block4Screen, Block5Screen, Block6Screen]
+var n, m;
 var counter;
 
-function SlideShow3(){
+function StartSlideShow(){
     counter = 0;
-    n = 8;
     BlockHelper.style.width = '420px';
     BlockHelper.style.height = '236px';
-    Block3Screen[0].style.width = '426px';
-    Block3Screen[0].style.height = '240px';
-    Block3Screen[0].style.left = '537px';
-    Block3Screen[0].style.top = '161px';
+    Blocks[m][0].style.width = '426px';
+    Blocks[m][0].style.height = '240px';
+    Blocks[m][0].style.left = '537px';
+    Blocks[m][0].style.top = '161px';
 
-    Block3Screen[1].style.width = '239px';
-    Block3Screen[1].style.height = '134px';
+    Blocks[m][1].style.width = '239px';
+    Blocks[m][1].style.height = '134px';
+}
+function SlideShow1(){
+    n = 4;
+    m = 0;
+    StartSlideShow()
+}
+
+function SlideShow2(){
+    n = 8;
+    m = 1;
+    StartSlideShow()
+}
+
+function SlideShow3(){
+    n = 8;
+    m = 2;
+    StartSlideShow()
+}
+
+function SlideShow4(){
+    n = 13;
+    m = 3;
+    StartSlideShow()
+}
+
+function SlideShow5(){
+    n = 4;
+    m = 4;
+    StartSlideShow()
+}
+
+function SlideShow6(){
+    n = 4;
+    m = 5;
+    StartSlideShow()
 }
 
 function SwipeRight(){
     if (counter < (n - 1)){
-        Block3Screen[counter].style.left = '1003px';
-        Block3Screen[counter].style.top = '214px';
-        Block3Screen[counter].style.width = '239px';
-        Block3Screen[counter].style.height = '134px';
+        Blocks[m][counter].style.left = '1003px';
+        Blocks[m][counter].style.top = '214px';
+        Blocks[m][counter].style.width = '239px';
+        Blocks[m][counter].style.height = '134px';
         counter ++;
-        Block3Screen[counter].style.width = '426px';
-        Block3Screen[counter].style.height = '240px';
-        Block3Screen[counter].style.left = '537px';
-        Block3Screen[counter].style.top = '161px';
+        Blocks[m][counter].style.width = '426px';
+        Blocks[m][counter].style.height = '240px';
+        Blocks[m][counter].style.left = '537px';
+        Blocks[m][counter].style.top = '161px';
 
-        Block3Screen[counter + 1].style.width = '239px';
-        Block3Screen[counter + 1].style.height = '134px';
+        Blocks[m][counter + 1].style.width = '239px';
+        Blocks[m][counter + 1].style.height = '134px';
 
-        Block3Screen[counter - 2].style.width = '0px';
-        Block3Screen[counter - 2].style.height = '0px';
-        Block3Screen[counter - 2].style.left = '1242px';
+        Blocks[m][counter - 2].style.width = '0px';
+        Blocks[m][counter - 2].style.height = '0px';
+        Blocks[m][counter - 2].style.left = '1242px';
+        Blocks[m][counter - 2].style.top = '214px';
     }
 }
 function SwipeLeft(){
     if (counter >= 1){
-        Block3Screen[counter].style.left = '258px';
-        Block3Screen[counter].style.top = '214px';
-        Block3Screen[counter].style.width = '239px';
-        Block3Screen[counter].style.height = '134px';
+        Blocks[m][counter].style.left = '258px';
+        Blocks[m][counter].style.top = '214px';
+        Blocks[m][counter].style.width = '239px';
+        Blocks[m][counter].style.height = '134px';
         counter --;
-        Block3Screen[counter].style.width = '426px';
-        Block3Screen[counter].style.height = '240px';
-        Block3Screen[counter].style.left = '537px';
-        Block3Screen[counter].style.top = '161px';
+        Blocks[m][counter].style.width = '426px';
+        Blocks[m][counter].style.height = '240px';
+        Blocks[m][counter].style.left = '537px';
+        Blocks[m][counter].style.top = '161px';
 
-        Block3Screen[counter + 2].style.width = '0px';
-        Block3Screen[counter + 2].style.height = '0px';
+        Blocks[m][counter - 1].style.width = '239px';
+        Blocks[m][counter - 1].style.height = '134px';
+        Blocks[m][counter - 1].style.left = '1003px';
+        Blocks[m][counter - 1].style.top = '214px';
+
+        Blocks[m][counter + 2].style.width = '0px';
+        Blocks[m][counter + 2].style.height = '0px';
+        Blocks[m][counter + 2].style.left = '258px';
+        Blocks[m][counter + 2].style.top = '214px';
     }
 }
 
 BlockHelper.onclick = () => {
-    Block3Screen[counter].style.width = '852px';
-    Block3Screen[counter].style.height = '480px';
-    Block3Screen[counter].style.left = '324px';
-    Block3Screen[counter].style.top = '41px';
-    Block3Screen[counter].style.zIndex = '100';
+    Blocks[m][counter].style.width = '852px';
+    Blocks[m][counter].style.height = '480px';
+    Blocks[m][counter].style.left = '324px';
+    Blocks[m][counter].style.top = '41px';
+    Blocks[m][counter].style.zIndex = '100';
     BlockHelper.style.width = '848px'
     BlockHelper.style.height = '476px'
     BlockHelper.style.left = '324px'
     BlockHelper.style.top = '41px'
 }
 BlockHelper.onmouseout = () => {
-    Block3Screen[counter].style.width = '426px';
-    Block3Screen[counter].style.height = '240px';
-    Block3Screen[counter].style.left = '537px';
-    Block3Screen[counter].style.top = '161px';
-    Block3Screen[counter].style.zIndex = '1';
+    Blocks[m][counter].style.width = '426px';
+    Blocks[m][counter].style.height = '240px';
+    Blocks[m][counter].style.left = '537px';
+    Blocks[m][counter].style.top = '161px';
+    Blocks[m][counter].style.zIndex = '1';
     BlockHelper.style.width = '420px'
     BlockHelper.style.height = '236px'
     BlockHelper.style.left = '537px'
