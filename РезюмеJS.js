@@ -4,6 +4,7 @@ const Data = document.getElementById('БлокДанных');
 const Scrins = document.getElementById('БлокСкринов');
 const Exit = document.getElementById('Exit');
 const BlockHelper = document.getElementById('BlockHelper');
+const Visitka = document.getElementById('СайтВизитка');
 var x = document.documentElement.clientWidth;
 
 const IMG1 = document.getElementById('IMG1');
@@ -32,7 +33,10 @@ const Pol = document.getElementById('PolibICO');
 
 function RightArow(){
     if (x < 1200){
-        RightArrow.style.display = 'none';}
+        RightArrow.style.display = 'none';
+        LeftArrow.style.display = 'none';
+        Visitka.style.fontSize = '36px';
+    }
 }
 
 VK.onmouseover = () => {
