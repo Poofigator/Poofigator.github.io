@@ -1,10 +1,10 @@
 const VK = document.getElementById('VK');
 const Cloud = document.getElementById('Облако');
-const MyNumber = document.getElementById('НомерТелефона');
 const Data = document.getElementById('БлокДанных');
 const Scrins = document.getElementById('БлокСкринов');
 const Exit = document.getElementById('Exit');
 const BlockHelper = document.getElementById('BlockHelper');
+var x = document.documentElement.clientWidth;
 
 const IMG1 = document.getElementById('IMG1');
 const Lang1 = document.getElementById('Lang1');
@@ -30,18 +30,23 @@ const IMG6 = document.getElementById('IMG6');
 const Lang6 = document.getElementById('Lang6');
 const Pol = document.getElementById('PolibICO');
 
+function RightArow(){
+    if (x < 1200){
+        RightArrow.style.display = 'none';}
+}
+
 VK.onmouseover = () => {
     VK.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 100%), #FFFFFF';
     VK.style.width = '74px';
     VK.style.height = '74px';
-    VK.style.left = 'calc(100% - (100% - 1100px)/2)-1px)';
+    VK.style.left = 'calc(87.5% - 1px)';
     VK.style.top = '1px';
 }
 VK.onmouseout = () => {
     VK.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF';
     VK.style.width = '72px';
     VK.style.height = '72px';
-    VK.style.left = 'calc(100% - (100% - 1100px)/2)';
+    VK.style.left = '87.5%';
     VK.style.top = '2px';
 }
 VK.onclick = () => {
@@ -52,25 +57,18 @@ Cloud.onmouseover = () => {
     Cloud.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 100%), #FFFFFF';
     Cloud.style.width = '74px';
     Cloud.style.height = '74px';
-    Cloud.style.left = '1051px';
+    Cloud.style.left = 'calc(80% - 1px)';
     Cloud.style.top = '27px';
 }
 Cloud.onmouseout = () => {
     Cloud.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF';
     Cloud.style.width = '72px';
     Cloud.style.height = '72px';
-    Cloud.style.left = '1052px';
+    Cloud.style.left = '80%';
     Cloud.style.top = '28px';
 }
 Cloud.onclick = () => {
     window.open('https://cloud.mail.ru/public/vYfe/6rHkyFqGX'); // Поменять на ссылку облака
-}
-
-MyNumber.onmouseover = () => {
-    MyNumber.style.color = 'rgba(0, 0, 0, 0.7)';
-}
-MyNumber.onmouseout = () => {
-    MyNumber.style.color = 'rgba(0, 0, 0, 0.3)';
 }
 
 IMG1.onmouseover = () => {
@@ -82,9 +80,10 @@ IMG1.onmouseout = () => {
     Lang1.style.opacity = .05
 }
 IMG1.onclick = () => {
-    RemoveData()
-    SlideshowStop()
-    SlideShow1()
+    if (x >='1200'){
+        RemoveData()
+        SlideshowStop()
+        SlideShow1()}
 }
 
 IMG2.onmouseover = () => {
@@ -96,9 +95,10 @@ IMG2.onmouseout = () => {
     Lang2.style.opacity = .05
 }
 IMG2.onclick = () => {
-    RemoveData()
-    SlideshowStop()
-    SlideShow2()
+    if (x >='1200'){
+        RemoveData()
+        SlideshowStop()
+        SlideShow2()}
 }
 
 IMG3.onmouseover = () => {
@@ -110,9 +110,10 @@ IMG3.onmouseout = () => {
     Lang3.style.opacity = .05
 }
 IMG3.onclick = () => {
-    RemoveData()
-    SlideshowStop()
-    SlideShow3()
+    if (x >='1200'){
+        RemoveData()
+        SlideshowStop()
+        SlideShow3()}
 }
 
 IMG4.onmouseover = () => {
@@ -124,9 +125,10 @@ IMG4.onmouseout = () => {
     Lang4.style.opacity = .05
 }
 IMG4.onclick = () => {
+    if (x >='1200'){
     RemoveData()
     SlideshowStop()
-    SlideShow4()
+    SlideShow4()}
 }
 
 IMG5.onmouseover = () => {
@@ -138,9 +140,10 @@ IMG5.onmouseout = () => {
     Lang5.style.opacity = .05
 }
 IMG5.onclick = () => {
+    if (x >='1200'){
     RemoveData()
     SlideshowStop()
-    SlideShow5()
+    SlideShow5()}
 }
 
 IMG6.onmouseover = () => {
@@ -152,9 +155,10 @@ IMG6.onmouseout = () => {
     Lang6.style.opacity = .05
 }
 IMG6.onclick = () => {
+    if (x >='1200'){
     RemoveData()
     SlideshowStop()
-    SlideShow6()
+    SlideShow6()}
 }
 
 function RemoveData(){
@@ -184,7 +188,7 @@ function SlideshowStop(){
         n--
         Blocks[m][n].style.width = '0px';
         Blocks[m][n].style.height = '0px';
-        Blocks[m][n].style.left = '258px';
+        Blocks[m][n].style.left = '19%';
         Blocks[m][n].style.top = '214px';
 
         BlockHelper.style.width = '0px';
@@ -244,11 +248,11 @@ var counter;
 
 function StartSlideShow(){
     counter = 0;
-    BlockHelper.style.width = '420px';
+    BlockHelper.style.width = '426px';
     BlockHelper.style.height = '236px';
     Blocks[m][0].style.width = '426px';
     Blocks[m][0].style.height = '240px';
-    Blocks[m][0].style.left = '537px';
+    Blocks[m][0].style.left = 'calc(50% - 213px)';
     Blocks[m][0].style.top = '161px';
 
     Blocks[m][1].style.width = '239px';
@@ -292,14 +296,14 @@ function SlideShow6(){
 
 function SwipeRight(){
     if (counter < (n - 1)){
-        Blocks[m][counter].style.left = '1003px';
+        Blocks[m][counter].style.left = 'calc(50% + 220px)';
         Blocks[m][counter].style.top = '214px';
         Blocks[m][counter].style.width = '239px';
         Blocks[m][counter].style.height = '134px';
         counter ++;
         Blocks[m][counter].style.width = '426px';
         Blocks[m][counter].style.height = '240px';
-        Blocks[m][counter].style.left = '537px';
+        Blocks[m][counter].style.left = 'calc(50% - 213px)';
         Blocks[m][counter].style.top = '161px';
 
         Blocks[m][counter + 1].style.width = '239px';
@@ -307,30 +311,30 @@ function SwipeRight(){
 
         Blocks[m][counter - 2].style.width = '0px';
         Blocks[m][counter - 2].style.height = '0px';
-        Blocks[m][counter - 2].style.left = '1242px';
+        Blocks[m][counter - 2].style.left = 'calc(70% + 240px)';
         Blocks[m][counter - 2].style.top = '214px';
     }
 }
 function SwipeLeft(){
     if (counter >= 1){
-        Blocks[m][counter].style.left = '258px';
+        Blocks[m][counter].style.left = 'calc(50% - 456px)';
         Blocks[m][counter].style.top = '214px';
         Blocks[m][counter].style.width = '239px';
         Blocks[m][counter].style.height = '134px';
         counter --;
         Blocks[m][counter].style.width = '426px';
         Blocks[m][counter].style.height = '240px';
-        Blocks[m][counter].style.left = '537px';
+        Blocks[m][counter].style.left = 'calc(50% - 213px)';
         Blocks[m][counter].style.top = '161px';
 
         Blocks[m][counter - 1].style.width = '239px';
         Blocks[m][counter - 1].style.height = '134px';
-        Blocks[m][counter - 1].style.left = '1003px';
+        Blocks[m][counter - 1].style.left = 'calc(50% + 220px)';
         Blocks[m][counter - 1].style.top = '214px';
 
         Blocks[m][counter + 2].style.width = '0px';
         Blocks[m][counter + 2].style.height = '0px';
-        Blocks[m][counter + 2].style.left = '258px';
+        Blocks[m][counter + 2].style.left = 'calc(50% - 456px)';
         Blocks[m][counter + 2].style.top = '214px';
     }
 }
@@ -338,22 +342,22 @@ function SwipeLeft(){
 BlockHelper.onclick = () => {
     Blocks[m][counter].style.width = '852px';
     Blocks[m][counter].style.height = '480px';
-    Blocks[m][counter].style.left = '324px';
+    Blocks[m][counter].style.left = 'calc(50% - 426px)';
     Blocks[m][counter].style.top = '41px';
     Blocks[m][counter].style.zIndex = '100';
     BlockHelper.style.width = '848px'
     BlockHelper.style.height = '476px'
-    BlockHelper.style.left = '324px'
+    BlockHelper.style.left = 'calc(50% - 426px)'
     BlockHelper.style.top = '41px'
 }
 BlockHelper.onmouseout = () => {
     Blocks[m][counter].style.width = '426px';
     Blocks[m][counter].style.height = '240px';
-    Blocks[m][counter].style.left = '537px';
+    Blocks[m][counter].style.left = 'calc(50% - 213px)';
     Blocks[m][counter].style.top = '161px';
     Blocks[m][counter].style.zIndex = '1';
     BlockHelper.style.width = '420px'
     BlockHelper.style.height = '236px'
-    BlockHelper.style.left = '537px'
+    BlockHelper.style.left = 'calc(50% - 213px)'
     BlockHelper.style.top = '161px'
 }
