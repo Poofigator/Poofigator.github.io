@@ -37,8 +37,8 @@ function RightArow(){
     if (x < 1200){
         RightArrow.style.display = 'none';
         LeftArrow.style.display = 'none';
-        Visitka.style.fontSize = '36px';
-        Info.style.top = '600px'
+        Visitka.style.fontSize = '34px';
+        Info.style.top = '590px'
         MyNumber.style.fontSize = '26px'
     }
 }
