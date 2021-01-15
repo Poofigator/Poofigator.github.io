@@ -88,10 +88,9 @@ IMG1.onmouseout = () => {
     Lang1.style.opacity = .05
 }
 IMG1.onclick = () => {
-    if (x >='1200'){
-        RemoveData()
-        SlideshowStop()
-        SlideShow1()}
+    RemoveData()
+    SlideshowStop()
+    SlideShow1()
 }
 
 IMG2.onmouseover = () => {
@@ -103,10 +102,9 @@ IMG2.onmouseout = () => {
     Lang2.style.opacity = .05
 }
 IMG2.onclick = () => {
-    if (x >='1200'){
-        RemoveData()
-        SlideshowStop()
-        SlideShow2()}
+    RemoveData()
+    SlideshowStop()
+    SlideShow2()
 }
 
 IMG3.onmouseover = () => {
@@ -118,10 +116,9 @@ IMG3.onmouseout = () => {
     Lang3.style.opacity = .05
 }
 IMG3.onclick = () => {
-    if (x >='1200'){
-        RemoveData()
-        SlideshowStop()
-        SlideShow3()}
+    RemoveData()
+    SlideshowStop()
+    SlideShow3()
 }
 
 IMG4.onmouseover = () => {
@@ -133,10 +130,9 @@ IMG4.onmouseout = () => {
     Lang4.style.opacity = .05
 }
 IMG4.onclick = () => {
-    if (x >='1200'){
     RemoveData()
     SlideshowStop()
-    SlideShow4()}
+    SlideShow4()
 }
 
 IMG5.onmouseover = () => {
@@ -148,10 +144,9 @@ IMG5.onmouseout = () => {
     Lang5.style.opacity = .05
 }
 IMG5.onclick = () => {
-    if (x >='1200'){
     RemoveData()
     SlideshowStop()
-    SlideShow5()}
+    SlideShow5()
 }
 
 IMG6.onmouseover = () => {
@@ -163,10 +158,9 @@ IMG6.onmouseout = () => {
     Lang6.style.opacity = .05
 }
 IMG6.onclick = () => {
-    if (x >='1200'){
     RemoveData()
     SlideshowStop()
-    SlideShow6()}
+    SlideShow6()
 }
 
 function RemoveData(){
@@ -266,40 +260,80 @@ function StartSlideShow(){
     Blocks[m][1].style.width = '239px';
     Blocks[m][1].style.height = '134px';
 }
+function StartSlideShowMobile(){
+    counter = 0;
+    BlockHelper.style.width = '426px';
+    BlockHelper.style.height = '236px';
+
+    Blocks[m][0].style.width = '426px';
+    Blocks[m][0].style.height = '240px';
+    Blocks[m][0].style.left = 'calc(50% - 213px)';
+    Blocks[m][0].style.top = '161px';
+}
 function SlideShow1(){
     n = 4;
     m = 0;
-    StartSlideShow()
+    if (x >= 1200){
+        StartSlideShow()
+    }
+    else{
+        StartSlideShowMobile()
+    }
 }
 
 function SlideShow2(){
     n = 8;
     m = 1;
-    StartSlideShow()
+    if (x >= 1200){
+        StartSlideShow()
+    }
+    else{
+        StartSlideShowMobile()
+    }
 }
 
 function SlideShow3(){
     n = 8;
     m = 2;
-    StartSlideShow()
+    if (x >= 1200){
+        StartSlideShow()
+    }
+    else{
+        StartSlideShowMobile()
+    }
 }
 
 function SlideShow4(){
     n = 13;
     m = 3;
-    StartSlideShow()
+    if (x >= 1200){
+        StartSlideShow()
+    }
+    else{
+        StartSlideShowMobile()
+    }
 }
 
 function SlideShow5(){
     n = 4;
     m = 4;
-    StartSlideShow()
+    if (x >= 1200){
+        StartSlideShow()
+    }
+    else{
+        StartSlideShowMobile()
+    }
 }
 
 function SlideShow6(){
     n = 4;
     m = 5;
-    StartSlideShow()
+    if (x >= 1200){
+        StartSlideShow()
+    }
+    else{
+        StartSlideShowMobile()
+    }
 }
 
 function SwipeRight(){
@@ -348,24 +382,50 @@ function SwipeLeft(){
 }
 
 BlockHelper.onclick = () => {
-    Blocks[m][counter].style.width = '852px';
-    Blocks[m][counter].style.height = '480px';
-    Blocks[m][counter].style.left = 'calc(50% - 426px)';
-    Blocks[m][counter].style.top = '41px';
-    Blocks[m][counter].style.zIndex = '100';
-    BlockHelper.style.width = '848px'
-    BlockHelper.style.height = '476px'
-    BlockHelper.style.left = 'calc(50% - 426px)'
-    BlockHelper.style.top = '41px'
+    if (x>=1200){
+        Blocks[m][counter].style.width = '852px';
+        Blocks[m][counter].style.height = '480px';
+        Blocks[m][counter].style.left = 'calc(50% - 426px)';
+        Blocks[m][counter].style.top = '41px';
+        Blocks[m][counter].style.zIndex = '100';
+        BlockHelper.style.width = '848px';
+        BlockHelper.style.height = '476px';
+        BlockHelper.style.left = 'calc(50% - 426px)';
+        BlockHelper.style.top = '41px';
+    }
+    else {
+        if (counter < n){
+            counter ++;
+        }
+        if (counter == n ){
+            SlideshowStop()
+            ShowData()
+        }
+        else{
+            Blocks[m][counter].style.width = '426px';
+            Blocks[m][counter].style.height = '240px';
+            Blocks[m][counter].style.left = 'calc(50% - 213px)';
+            Blocks[m][counter].style.top = '161px';
+        }
+        if (counter != n){
+            Blocks[m][counter - 1].style.width = '0px';
+            Blocks[m][counter - 1].style.height = '0px';
+            Blocks[m][counter - 1].style.left = '50%';
+            Blocks[m][counter - 1].style.top = '374px';
+        }  
+        
+    }
 }
 BlockHelper.onmouseout = () => {
-    Blocks[m][counter].style.width = '426px';
-    Blocks[m][counter].style.height = '240px';
-    Blocks[m][counter].style.left = 'calc(50% - 213px)';
-    Blocks[m][counter].style.top = '161px';
-    Blocks[m][counter].style.zIndex = '1';
-    BlockHelper.style.width = '420px'
-    BlockHelper.style.height = '236px'
-    BlockHelper.style.left = 'calc(50% - 213px)'
-    BlockHelper.style.top = '161px'
+    if (x >= 1200){
+        Blocks[m][counter].style.width = '426px';
+        Blocks[m][counter].style.height = '240px';
+        Blocks[m][counter].style.left = 'calc(50% - 213px)';
+        Blocks[m][counter].style.top = '161px';
+        Blocks[m][counter].style.zIndex = '1';
+        BlockHelper.style.width = '420px';
+        BlockHelper.style.height = '236px';
+        BlockHelper.style.left = 'calc(50% - 213px)';
+        BlockHelper.style.top = '161px';
+    }
 }
