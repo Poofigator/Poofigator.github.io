@@ -33,7 +33,7 @@ const IMG6 = document.getElementById('IMG6');
 const Lang6 = document.getElementById('Lang6');
 const Pol = document.getElementById('PolibICO');
 
-function RightArow(){
+function Loading(){
     if (x < 1200){
         RightArrow.style.display = 'none';
         LeftArrow.style.display = 'none';
