@@ -5,6 +5,8 @@ const Scrins = document.getElementById('БлокСкринов');
 const Exit = document.getElementById('Exit');
 const BlockHelper = document.getElementById('BlockHelper');
 const Visitka = document.getElementById('СайтВизитка');
+const Info = document.getElementById('Образование');
+const MyNumber = document.getElementById('НомерТелефона');
 var x = document.documentElement.clientWidth;
 
 const IMG1 = document.getElementById('IMG1');
@@ -36,6 +38,8 @@ function RightArow(){
         RightArrow.style.display = 'none';
         LeftArrow.style.display = 'none';
         Visitka.style.fontSize = '36px';
+        Info.style.top = '600px'
+        MyNumber.style.fontSize = '26px'
     }
 }
 
