@@ -285,7 +285,7 @@ border: 10px solid #075300;
 }
 #ОбъединениеЛаб{
     position: absolute;
-    width: 354px;
+    width: 320px;
     height: 42px;
     left: calc(75% - 64px);
     top: 1256px;
