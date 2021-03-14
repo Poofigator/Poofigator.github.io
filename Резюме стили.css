@@ -1,508 +1,478 @@
+body{
+    font-size: 1vw;
+}
 #Шапка {
     position: absolute;
     width: 100%;
-    height: 76px;
+    height: 5em;
     left: 0px;
     top: 0px; 
     background: linear-gradient(106.99deg, rgba(0, 8, 203, 0.324) 33.06%, rgba(0, 172, 209, 0) 57.69%), #23B516;
     cursor: default
 }
 #Футер{
-position: absolute;
-width: 100%;
-height: 200px;
-left: 0px;
-top: 1800px;
-background: linear-gradient(180deg, #FFFFFF 0%, #23B516 100%), #23B516;
-cursor: default
+    position: absolute;
+    width: 100%;
+    height: 12.5em;
+    left: 0px;
+    top: 118em;
+    background: linear-gradient(180deg, #FFFFFF 0%, #23B516 100%), #23B516;
+    cursor: default
 }
 #СайтВизитка{
-position: absolute;
-width: 297px;
-height: 56px;
-left: 20% ;
-top: 20px;
+    position: absolute;
+    width: 20em;
+    height: 1em;
+    left: 20% ;
+    top: 0.5em;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 56px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
 
-color: rgba(130, 255, 119, 0.5);
+    color: rgba(130, 255, 119, 0.5);
 }
 #НомерТелефона{
-position: absolute;
-width: 10px;
-height: 36px;
-left: 70%;
-top: 32px;
+    position: absolute;
+    width: 0.5em;
+    height: 2.25em;
+    left: 70%;
+    top: 1.1em;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
 
-color: rgba(0, 0, 0, 0.3);
-transition: all 1s;
-cursor: default;
+    color: rgba(0, 0, 0, 0.3);
+    transition: all 1s;
+    cursor: default;
 }
 #VK{
-position: absolute;
-width: 72px;
-height: 72px;
-left: 87.5%; 
-top: 2px;
-background: linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF;
-border-radius: 36px;
-cursor: pointer;
+    position: absolute;
+    width: 4.7em;
+    height: 4.7em;
+    left: 87.5%; 
+    top: 0.1em;
+    background: linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF;
+    border-radius: 3em;
+    cursor: pointer;
 }
 #ТекстВК{
-position: absolute;
-width: 50px;
-height: 43px;
-left: 11px;
-top: 15px;
+    position: absolute;
+    width: 4.7em;
+    height: 4.7em;
+    left: 15%;
+    top: 0.5em;
 
-font-family: Tahoma;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 43px;
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.3em;
 
-color: rgba(48, 0, 186, 0.8);
+    color: rgba(48, 0, 186, 0.8);
 }
 #РабочаяЗона{
-position: absolute;
-width: 75%;
-height: 2000px;
-left: 12.5%;
-right: 12.5%;
-top: 0px;
+    position: absolute;
+    width: 75%;
+    height: 125em;
+    left: 12.5%;
+    right: 12.5%;
+    top: 0px;
 }
 #ПоследнийКомментарий{
-position: absolute;
-width: 75%;
-height: 105px;
-left: calc(12.5% + 100px);
-top: 47px;
+    position: absolute;
+    width: 75%;
+    height: 6.5625em;
+    left: calc(12.5% + 6.125em);
+    top: 2.9375em;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 21px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2em;
 
-color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
 }
 #Облако{
     position: absolute;
-    width: 72px;
-    height: 72px;
+    width: 4.7em;
+    height: 4.7em;
     left: 80%;
-    top: 28px;
-    background: linear-gradient(180deg, rgba(35, 181, 22, 0.65) 0%, #57FF49 80%), #FFFFFF;
-    border-radius: 36px;
+    top: 1.75em;
+    background: linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF;
+    border-radius: 3em;
     cursor: pointer
 }
 #ОблакоIMG{
-position: absolute;
-width: 62px;
-height: 60px;
-left: 5px;
-top: 6px;
+    position: absolute;
+    width: 3.875em;
+    height: 3.75em;
+    left: 0.3125em;
+    top: 0.375em;
 }
 #Фото{
-position: absolute;
-width: 300px;
-height: 300px;
-left: 10%;
-top: 200px;
+    position: absolute;
+    width: 18em;
+    height: 18em;
+    left: 10%;
+    top: 12.5em;
 
-background: #6BBBE8;
-border-radius: 40px;
+    border-radius: 2.5em;
 }
 #ИЕМ{
-position: absolute;
-width: 60%;
-height: 75px;
-left: 52%;
-top: 200px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 75px;
-cursor: default;
-color: #000000;
-}
-#ЛичнаяИнфа{
-position: absolute;
-width: 20%;
-height: 133px;
-left: 50%;
-top: 304px;
-cursor: default;
-}
-#ДР{
     position: absolute;
-    width: 327px;
-    height: 21px;
-    left: 27px;
-    top: 15px;
-    
+    width: 60%;
+    height: 5em;
+    left: 52%;
+    top: 5.5em;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 2.2em;
     cursor: default;
     color: #000000;
 }
-#Адрес{
+#ЛичнаяИнфа{
     position: absolute;
-    width: 343px;
-    height: 21px;
-    left: 27px;
-    top: 44px;
+    width: 20%;
+    height: 8.3125em;
+    left: 50%;
+    top: 9em;
     cursor: default;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.8em;
+    cursor: default;
+    color: #000000;
+}
+#ДР{
+    position: absolute;
+    width: 21em;
+    height: 1.6em;
+    left: 1.6875em;
+    top: 1.5em;
+    
+}
+#Адрес{
+    position: absolute;
+    width: 21em;
+    height: 1.3125em;
+    left: 1.6875em;
+    top: 3em;
+    cursor: default;
     
     color: #000000;    
 }
 #СемейноеПоложение{
     position: absolute;
-    width: 271px;
-    height: 21px;
-    left: 27px;
-    top: 73px;
+    width: 21em;
+    height: 1.3125em;
+    left: 1.6875em;
+    top: 4.5em;
     cursor: default;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
     
     color: #000000;
 }
 #e-mail{
     position: absolute;
-    width: 213px;
-    height: 21px;
-    left: 27px;
-    top: 102px;
+    width: 21em;
+    height: 1.3125em;
+    left: 1.6875em;
+    top: 6em;
     cursor: default;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
     
     color: #000000;
 }
 #line1{
-position: absolute;
-width: calc(100% - 20px);
-height: 0px;
-left: 0px;
-top: 572px;
-z-index: 2;
-border: 10px solid #075300;
+    position: absolute;
+    width: calc(100% - 1.25em);
+    height: 0px;
+    left: 0px;
+    top: 35.75em;
+    z-index: 2;
+    border: 0.7em solid #075300;
 }
 #line2{
     position: absolute;
-    width: calc(100% - 20px);
+    width: calc(100% - 1.25em);
     height: 0px;
     left: 0px;
-    top: 1143px;
+    top: 71.4em;
     z-index: 2;
-    border: 10px solid #075300;
-}
-#Образование{
-    position: absolute;
-    width: 75%;
-    height: 56px;
-    left: 12.5%;
-    top: 620px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    
-    color: #000000;
-}
-#МоиРаботы{
-    position: absolute;
-    width: 300px;
-    height: 42px;
-    left: 20%;
-    top: 1188px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-
-    color: #000000;
-}
-#PingPong{
-    position: absolute;
-    width: 212px;
-    height: 34px;
-    left: calc(25% - 80px);
-    top: 1256px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    
-    color: #000000;
-}
-#GreatOak{
-    position: absolute;
-    width: 191px;
-    height: 42px;
-    left: calc(50% - 64px);
-    top: 1256px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    
-    color: #000000;
-}
-#ОбъединениеЛаб{
-    position: absolute;
-    width: 300px;
-    height: 42px;
-    left: calc(75% - 48px);
-    top: 1256px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-
-    color: #000000;
-}
-#MainCraft{
-    position: absolute;
-    width: 289px;
-    height: 38px;
-    left: calc(25% - 80px);
-    top: 1496px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 19px;
-    
-    color: #000000;
-}
-#Calculator{
-    position: absolute;
-    width: 229px;
-    height: 38px;
-    left: calc(50% - 64px);
-    top: 1496px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 19px;
-    
-    color: #000000;    
-}
-#Polybius
-{
-    position: absolute;
-    width: 262px;
-    height: 38px;
-    left: calc(75% - 48px);
-    top: 1496px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 19px;
-    
-    color: #000000;
-}
-#IMG1{
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: calc(25% - 80px);
-    top: 1312px;
-    border: 2px solid #075300;
-    background: #6BBBE8;
-    border-radius: 20px;
-    cursor: pointer
-}
-#IMG2{
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: calc(50% - 64px);
-    top: 1312px;
-    border: 2px solid #075300;
-    background: #6BBBE8;
-    border-radius: 20px;
-    cursor: pointer
-}
-#IMG3{
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: calc(75% - 48px);
-    top: 1312px;
-    border: 2px solid #075300;
-    background: #6BBBE8;
-    border-radius: 20px;
-    cursor: pointer
-}
-#IMG4{
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: calc(25% - 80px);
-    top: 1553px;
-    border: 2px solid #075300;
-    background: #6BBBE8;
-    border-radius: 20px;
-    cursor: pointer
-}
-#IMG5{
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: calc(50% - 64px);
-    top: 1553px;
-    border: 2px solid #075300;
-    background: #6BBBE8;
-    border-radius: 20px;
-    cursor: pointer
-}
-#IMG6{
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: calc(75% - 48px);
-    top: 1553px;
-    border: 2px solid #075300;
-    background: #6BBBE8;
-    border-radius: 20px;
-    cursor: pointer
-}
-#Lang1{
-    position: absolute;
-    width: 196px;
-    height: 128px;
-    left: -34px;
-    top: 0px;
-    opacity: 0.05;
-    transition: all 2s;
-}
-#Lang2{
-    position: absolute;
-    width: 196px;
-    height: 128px;
-    left: -34px;
-    top: 0px;
-    opacity: 0.05;
-    transition: all 2s;
-}
-#Lang3{
-    position: absolute;
-    width: 228px;
-    height: 164px;
-    left: -51px;
-    top: -14px;
-    opacity: 0.05;
-    transition: all 2s;
-    mix-blend-mode: color-burn;
-}
-#Lang4{
-    position: absolute;
-    width: 196px;
-    height: 128px;
-    left: -34px;
-    top: 0px;
-    opacity: 0.05;
-    transition: all 2s;
-}
-#Lang5{
-    position: absolute;
-    width: 196px;
-    height: 128px;
-    left: -34px;
-    top: 0px;
-    opacity: 0.05;
-    transition: all 2s;
-}
-#Lang6{
-    position: absolute;
-    width: 228px;
-    height: 164px;
-    left: -51px;
-    top: -14px;
-    opacity: 0.05;
-    transition: all 2s;
-    mix-blend-mode: color-burn;
-}
-.ICO{
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    left: 0px;
-    top: 0px;
-    transition: all 2s;
+    border: 0.7em solid #075300;
 }
 #БлокДанных{
     width: 100%;
     opacity: 1;
     transition: all 1s;
     cursor: default;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    cursor: default;
+    color: #000000;
 }
+#Образование{
+    position: absolute;
+    width: 75%;
+    height: 3.5em;
+    left: 12.5%;
+    top: 26.5em;
+}
+#МоиРаботы{
+    position: absolute;
+    width: 18.75em;
+    height: 2.625em;
+    left: 12.5%;
+    top: 39em;
+
+    font-size: 2em;
+}
+#PingPong{
+    position: absolute;
+    width: 13.25em;
+    height: 2.125em;
+    left: calc(25% - 6em);
+    top: 84.5em;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    
+    color: #000000;
+}
+#GreatOak{
+    position: absolute;
+    width: 13.25em;
+    height: 2.125em;
+    left: calc(50% - 4.5em);
+    top: 84.5em;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    
+    color: #000000;
+}
+#ОбъединениеЛаб{
+    position: absolute;
+    width: 20em;
+    height: 2.125em;
+    left: calc(75% - 3em);
+    top: 84.5em;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+
+    color: #000000;
+}
+#MainCraft{
+    position: absolute;
+    width: 13.25em;
+    height: 2.125em;
+    left: calc(25% - 6em);
+    top: 100em;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    
+    color: #000000;
+}
+#Calculator{
+    position: absolute;
+    width: 13.25em;
+    height: 2.125em;
+    left: calc(50% - 4.5em);
+    top: 100em;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    
+    color: #000000;    
+}
+#Polybius
+{
+    position: absolute;
+    width: 13.25em;
+    height: 2.125em;
+    left: calc(75% - 3em);
+    top: 100em;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    
+    color: #000000;
+}
+#IMG1{
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: calc(25% - 5em);
+    top: 88em;
+    border: 0.125em solid #075300;
+    background: #6BBBE8;
+    border-radius: 1.25em;
+    cursor: pointer
+}
+#IMG2{
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: calc(50% - 4em);
+    top: 88em;
+    border: 0.125em solid #075300;
+    background: #6BBBE8;
+    border-radius: 1.25em;
+    cursor: pointer
+}
+#IMG3{
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: calc(75% - 3em);
+    top: 88em;
+    border: 0.125em solid #075300;
+    background: #6BBBE8;
+    border-radius: 1.25em;
+    cursor: pointer
+}
+#IMG4{
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: calc(25% - 5em);
+    top: 105em;
+    border: 0.125em solid #075300;
+    background: #6BBBE8;
+    border-radius: 1.25em;
+    cursor: pointer
+}
+#IMG5{
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: calc(50% - 4em);
+    top: 105em;
+    border: 0.125em solid #075300;
+    background: #6BBBE8;
+    border-radius: 1.25em;
+    cursor: pointer
+}
+#IMG6{
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: calc(75% - 3em);
+    top: 105em;
+    border: 0.125em solid #075300;
+    background: #6BBBE8;
+    border-radius: 1.25em;
+    cursor: pointer
+}
+#Lang1{
+    position: absolute;
+    width: 12.25em;
+    height: 8em;
+    left: -2.125em;
+    top: 0px;
+    opacity: 0.05;
+    transition: all 2s;
+}
+#Lang2{
+    position: absolute;
+    width: 12.25em;
+    height: 8em;
+    left: -2.125em;
+    top: 0px;
+    opacity: 0.05;
+    transition: all 2s;
+}
+#Lang3{
+    position: absolute;
+    width: 14.25em;
+    height: 10.25em;
+    left: -3.1875em;
+    top: -0.875em;
+    opacity: 0.05;
+    transition: all 2s;
+    mix-blend-mode: color-burn;
+}
+#Lang4{
+    position: absolute;
+    width: 12.25em;
+    height: 8em;
+    left: -2.125em;
+    top: 0px;
+    opacity: 0.05;
+    transition: all 2s;
+}
+#Lang5{
+    position: absolute;
+    width: 12.25em;
+    height: 8em;
+    left: -2.125em;
+    top: 0px;
+    opacity: 0.05;
+    transition: all 2s;
+}
+#Lang6{
+    position: absolute;
+    width: 14.25em;
+    height: 10.25em;
+    left: -3.1875em;
+    top: -0.875em;
+    opacity: 0.05;
+    transition: all 2s;
+    mix-blend-mode: color-burn;
+}
+.ICO{
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: 0px;
+    top: 0px;
+    transition: all 2s;
+}
+
 #БлокСкринов{
     opacity: 0;
     transition: all 1s;
     position: absolute;
     width: 100%;
-    height: 570px;
+    height: 36em;
     left: 0px;
-    top: 582px;
+    top: 36.375em;
 
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.98) 0%, rgba(35, 181, 22, 0.98) 100%);
     mix-blend-mode: normal;
 }
 #Exit{
     position: absolute;
-    width: 36px;
-    height: 36px;
+    width: 2.25em;
+    height: 2.25em;
     left: 80%;
-    top: 18px;
+    top: 1.125em;
     font-family: ROG Fonts;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 56px;
+    font-size: 2.25em;
     color: #000000;
     cursor: default;
     opacity: 0.3;
@@ -511,19 +481,19 @@ border: 10px solid #075300;
 }
 #RightArrow{
     position: absolute;
-    width: 50px;
-    height: 50px;
-    left: calc(50% + 458px);
-    top: 255px;
+    width: 3.125em;
+    height: 3.125em;
+    left: calc(50% + 28.625em);
+    top: 15.9em;
     opacity: 0.3;
     z-index: 2;
 }
 #LeftArrow{
     position: absolute;
-    width: 50px;
-    height: 50px;
-    left: calc(50% - 506px);
-    top: 255px;
+    width: 3.125em;
+    height: 3.125em;
+    left: calc(50% - 31.625em);
+    top: 15.9em;
     transform: rotate(-180deg);
     opacity: 0.3;
     z-index: 2;
@@ -532,16 +502,14 @@ border: 10px solid #075300;
     position: absolute;
     width: 0px;
     height: 0px;
-    left: calc(50% - 456px);
-    top: 214px;
+    left: calc(50% - 28.5em);
+    top: 13.375em;
     transition: all .3s;
 }
 #BlockHelper{
     position: absolute;
-    width: 426px;
-    height: 236px;
-    left: calc(50% - 213px);
-    top: 161px;
+    left: calc(50% - 13.3125em);
+    top: 10em;
     transition: all .3s;
     z-index: 1000;
 }

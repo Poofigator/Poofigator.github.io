@@ -33,29 +33,19 @@ const IMG6 = document.getElementById('IMG6');
 const Lang6 = document.getElementById('Lang6');
 const Pol = document.getElementById('PolibICO');
 
-function Loading(){
-    if (x < 1200){
-        RightArrow.style.display = 'none';
-        LeftArrow.style.display = 'none';
-        Visitka.style.fontSize = '34px';
-        Info.style.top = '590px'
-        MyNumber.style.fontSize = '26px'
-    }
-}
-
 VK.onmouseover = () => {
     VK.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 100%), #FFFFFF';
-    VK.style.width = '74px';
-    VK.style.height = '74px';
-    VK.style.left = 'calc(87.5% - 1px)';
-    VK.style.top = '1px';
+    VK.style.width = '4.8em';
+    VK.style.height = '4.8em';
+    VK.style.left = 'calc(87.5% - 0.0625em)';
+    VK.style.top = '0.0625em';
 }
 VK.onmouseout = () => {
     VK.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF';
-    VK.style.width = '72px';
-    VK.style.height = '72px';
+    VK.style.width = '4.7em';
+    VK.style.height = '4.7em';
     VK.style.left = '87.5%';
-    VK.style.top = '2px';
+    VK.style.top = '0.125em';
 }
 VK.onclick = () => {
     window.open('https://vk.com/poofigator');
@@ -63,17 +53,17 @@ VK.onclick = () => {
 
 Cloud.onmouseover = () => {
     Cloud.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 100%), #FFFFFF';
-    Cloud.style.width = '74px';
-    Cloud.style.height = '74px';
-    Cloud.style.left = 'calc(80% - 1px)';
-    Cloud.style.top = '27px';
+    Cloud.style.width = '4.8em';
+    Cloud.style.height = '4.8em';
+    Cloud.style.left = 'calc(80% - 0.0625em)';
+    Cloud.style.top = '1.6875em';
 }
 Cloud.onmouseout = () => {
     Cloud.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF';
-    Cloud.style.width = '72px';
-    Cloud.style.height = '72px';
+    Cloud.style.width = '4.7em';
+    Cloud.style.height = '4.7em';
     Cloud.style.left = '80%';
-    Cloud.style.top = '28px';
+    Cloud.style.top = '1.75em';
 }
 Cloud.onclick = () => {
     window.open('https://cloud.mail.ru/public/vYfe/6rHkyFqGX'); // Поменять на ссылку облака
@@ -191,7 +181,7 @@ function SlideshowStop(){
         Blocks[m][n].style.width = '0px';
         Blocks[m][n].style.height = '0px';
         Blocks[m][n].style.left = '19%';
-        Blocks[m][n].style.top = '214px';
+        Blocks[m][n].style.top = '13.375em';
 
         BlockHelper.style.width = '0px';
         BlockHelper.style.height = '0px';
@@ -250,182 +240,117 @@ var counter;
 
 function StartSlideShow(){
     counter = 0;
-    BlockHelper.style.width = '426px';
-    BlockHelper.style.height = '236px';
-    Blocks[m][0].style.width = '426px';
-    Blocks[m][0].style.height = '240px';
-    Blocks[m][0].style.left = 'calc(50% - 213px)';
-    Blocks[m][0].style.top = '161px';
+    BlockHelper.style.width = '26.625em';
+    BlockHelper.style.height = '15em';
+    Blocks[m][0].style.width = '26.625em';
+    Blocks[m][0].style.height = '15em';
+    Blocks[m][0].style.left = 'calc(50% - 13.3125em)';
+    Blocks[m][0].style.top = '10em';
 
-    Blocks[m][1].style.width = '239px';
-    Blocks[m][1].style.height = '134px';
-}
-function StartSlideShowMobile(){
-    counter = 0;
-    BlockHelper.style.width = '426px';
-    BlockHelper.style.height = '236px';
-
-    Blocks[m][0].style.width = '426px';
-    Blocks[m][0].style.height = '240px';
-    Blocks[m][0].style.left = 'calc(50% - 213px)';
-    Blocks[m][0].style.top = '161px';
+    Blocks[m][1].style.width = '15em';
+    Blocks[m][1].style.height = '8.375em';
 }
 function SlideShow1(){
     n = 4;
     m = 0;
-    if (x >= 1200){
-        StartSlideShow()
-    }
-    else{
-        StartSlideShowMobile()
-    }
+    StartSlideShow();
 }
 
 function SlideShow2(){
     n = 8;
     m = 1;
-    if (x >= 1200){
-        StartSlideShow()
-    }
-    else{
-        StartSlideShowMobile()
-    }
+    StartSlideShow();
 }
 
 function SlideShow3(){
     n = 8;
     m = 2;
-    if (x >= 1200){
-        StartSlideShow()
-    }
-    else{
-        StartSlideShowMobile()
-    }
+    StartSlideShow()
 }
 
 function SlideShow4(){
     n = 13;
     m = 3;
-    if (x >= 1200){
-        StartSlideShow()
-    }
-    else{
-        StartSlideShowMobile()
-    }
+    StartSlideShow();
 }
 
 function SlideShow5(){
     n = 4;
     m = 4;
-    if (x >= 1200){
-        StartSlideShow()
-    }
-    else{
-        StartSlideShowMobile()
-    }
+    StartSlideShow();
 }
 
 function SlideShow6(){
     n = 4;
     m = 5;
-    if (x >= 1200){
-        StartSlideShow()
-    }
-    else{
-        StartSlideShowMobile()
-    }
+    StartSlideShow();
 }
 
 function SwipeRight(){
     if (counter < (n - 1)){
-        Blocks[m][counter].style.left = 'calc(50% + 220px)';
-        Blocks[m][counter].style.top = '214px';
-        Blocks[m][counter].style.width = '239px';
-        Blocks[m][counter].style.height = '134px';
+        Blocks[m][counter].style.left = 'calc(50% + 13.75em)';
+        Blocks[m][counter].style.top = '13.375em';
+        Blocks[m][counter].style.width = '14.9375em';
+        Blocks[m][counter].style.height = '8.375em';
         counter ++;
-        Blocks[m][counter].style.width = '426px';
-        Blocks[m][counter].style.height = '240px';
-        Blocks[m][counter].style.left = 'calc(50% - 213px)';
-        Blocks[m][counter].style.top = '161px';
+        Blocks[m][counter].style.width = '26.625em';
+        Blocks[m][counter].style.height = '15em';
+        Blocks[m][counter].style.left = 'calc(50% - 13.3125em)';
+        Blocks[m][counter].style.top = '10em';
 
-        Blocks[m][counter + 1].style.width = '239px';
-        Blocks[m][counter + 1].style.height = '134px';
+        Blocks[m][counter + 1].style.width = '15em';
+        Blocks[m][counter + 1].style.height = '8.375em';
 
         Blocks[m][counter - 2].style.width = '0px';
         Blocks[m][counter - 2].style.height = '0px';
-        Blocks[m][counter - 2].style.left = 'calc(70% + 240px)';
-        Blocks[m][counter - 2].style.top = '214px';
+        Blocks[m][counter - 2].style.left = 'calc(70% + 15em)';
+        Blocks[m][counter - 2].style.top = '13.375em';
     }
 }
 function SwipeLeft(){
     if (counter >= 1){
-        Blocks[m][counter].style.left = 'calc(50% - 456px)';
-        Blocks[m][counter].style.top = '214px';
-        Blocks[m][counter].style.width = '239px';
-        Blocks[m][counter].style.height = '134px';
+        Blocks[m][counter].style.left = 'calc(50% - 28.5em)';
+        Blocks[m][counter].style.top = '13.375em';
+        Blocks[m][counter].style.width = '15em';
+        Blocks[m][counter].style.height = '8.375em';
         counter --;
-        Blocks[m][counter].style.width = '426px';
-        Blocks[m][counter].style.height = '240px';
-        Blocks[m][counter].style.left = 'calc(50% - 213px)';
-        Blocks[m][counter].style.top = '161px';
+        Blocks[m][counter].style.width = '26.625em';
+        Blocks[m][counter].style.height = '15em';
+        Blocks[m][counter].style.left = 'calc(50% - 13.3125em)';
+        Blocks[m][counter].style.top = '10em';
 
-        Blocks[m][counter - 1].style.width = '239px';
-        Blocks[m][counter - 1].style.height = '134px';
-        Blocks[m][counter - 1].style.left = 'calc(50% + 220px)';
-        Blocks[m][counter - 1].style.top = '214px';
+        Blocks[m][counter - 1].style.width = '15em';
+        Blocks[m][counter - 1].style.height = '8.375em';
+        Blocks[m][counter - 1].style.left = 'calc(50% + 13.75em)';
+        Blocks[m][counter - 1].style.top = '13.375em';
 
         Blocks[m][counter + 2].style.width = '0px';
         Blocks[m][counter + 2].style.height = '0px';
-        Blocks[m][counter + 2].style.left = 'calc(50% - 456px)';
-        Blocks[m][counter + 2].style.top = '214px';
+        Blocks[m][counter + 2].style.left = 'calc(50% - 28.5em)';
+        Blocks[m][counter + 2].style.top = '13.375em';
     }
 }
 
 BlockHelper.onclick = () => {
-    if (x>=1200){
-        Blocks[m][counter].style.width = '852px';
-        Blocks[m][counter].style.height = '480px';
-        Blocks[m][counter].style.left = 'calc(50% - 426px)';
-        Blocks[m][counter].style.top = '41px';
-        Blocks[m][counter].style.zIndex = '100';
-        BlockHelper.style.width = '848px';
-        BlockHelper.style.height = '476px';
-        BlockHelper.style.left = 'calc(50% - 426px)';
-        BlockHelper.style.top = '41px';
-    }
-    else {
-        if (counter < n){
-            counter ++;
-        }
-        if (counter == n ){
-            SlideshowStop()
-            ShowData()
-        }
-        else{
-            Blocks[m][counter].style.width = '426px';
-            Blocks[m][counter].style.height = '240px';
-            Blocks[m][counter].style.left = 'calc(50% - 213px)';
-            Blocks[m][counter].style.top = '161px';
-        }
-        if (counter != n){
-            Blocks[m][counter - 1].style.width = '0px';
-            Blocks[m][counter - 1].style.height = '0px';
-            Blocks[m][counter - 1].style.left = '50%';
-            Blocks[m][counter - 1].style.top = '374px';
-        }  
-        
-    }
+    Blocks[m][counter].style.width = '53.25em';
+    Blocks[m][counter].style.height = '30em';
+    Blocks[m][counter].style.left = 'calc(50% - 26.625em)';
+    Blocks[m][counter].style.top = '2.5em';
+    Blocks[m][counter].style.zIndex = '100';
+    BlockHelper.style.width = '53.25em';
+    BlockHelper.style.height = '30em';
+    BlockHelper.style.left = 'calc(50% - 26.625em)';
+    BlockHelper.style.top = '2.5em';
 }
 BlockHelper.onmouseout = () => {
-    if (x >= 1200){
-        Blocks[m][counter].style.width = '426px';
-        Blocks[m][counter].style.height = '240px';
-        Blocks[m][counter].style.left = 'calc(50% - 213px)';
-        Blocks[m][counter].style.top = '161px';
-        Blocks[m][counter].style.zIndex = '1';
-        BlockHelper.style.width = '420px';
-        BlockHelper.style.height = '236px';
-        BlockHelper.style.left = 'calc(50% - 213px)';
-        BlockHelper.style.top = '161px';
-    }
+    Blocks[m][counter].style.width = '26.625em';
+    Blocks[m][counter].style.height = '15em';
+    Blocks[m][counter].style.left = 'calc(50% - 13.3125em)';
+    Blocks[m][counter].style.top = '10em';
+    Blocks[m][counter].style.zIndex = '1';
+    BlockHelper.style.width = '26.625em';
+    BlockHelper.style.height = '15em';
+    BlockHelper.style.left = 'calc(50% - 13.3125em)';
+    BlockHelper.style.top = '10em';
 }
+
