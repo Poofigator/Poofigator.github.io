@@ -180,7 +180,7 @@ function SlideshowStop(){
         n--
         Blocks[m][n].style.width = '0px';
         Blocks[m][n].style.height = '0px';
-        Blocks[m][n].style.left = '19%';
+        Blocks[m][n].style.left = 'calc(50% - 28.5em)';
         Blocks[m][n].style.top = '13.375em';
 
         BlockHelper.style.width = '0px';
@@ -303,7 +303,7 @@ function SwipeRight(){
 
         Blocks[m][counter - 2].style.width = '0px';
         Blocks[m][counter - 2].style.height = '0px';
-        Blocks[m][counter - 2].style.left = 'calc(70% + 15em)';
+        Blocks[m][counter - 2].style.left = 'calc(70% + 9em)';
         Blocks[m][counter - 2].style.top = '13.375em';
     }
 }
