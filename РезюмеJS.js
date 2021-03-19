@@ -1,4 +1,5 @@
 const VK = document.getElementById('VK');
+const Telegram = document.getElementById('Telegram')
 const Cloud = document.getElementById('Облако');
 const Data = document.getElementById('БлокДанных');
 const Scrins = document.getElementById('БлокСкринов');
@@ -37,18 +38,36 @@ VK.onmouseover = () => {
     VK.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 100%), #FFFFFF';
     VK.style.width = '4.8em';
     VK.style.height = '4.8em';
-    VK.style.left = 'calc(87.5% - 0.0625em)';
+    VK.style.left = 'calc(81% - 0.0625em)';
     VK.style.top = '0.0625em';
 }
 VK.onmouseout = () => {
     VK.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF';
     VK.style.width = '4.7em';
     VK.style.height = '4.7em';
-    VK.style.left = '87.5%';
+    VK.style.left = '81%';
     VK.style.top = '0.125em';
 }
 VK.onclick = () => {
     window.open('https://vk.com/poofigator');
+}
+
+Telegram.onmouseover = () => {
+    Telegram.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 100%), #FFFFFF';
+    Telegram.style.width = '4.8em';
+    Telegram.style.height = '4.8em';
+    Telegram.style.left = 'calc(87.5% - 0.0625em)';
+    Telegram.style.top = '0.0625em';
+}
+Telegram.onmouseout = () => {
+    Telegram.style.background = 'linear-gradient(180deg, #23B516 0%, #57FF49 80%), #FFFFFF';
+    Telegram.style.width = '4.7em';
+    Telegram.style.height = '4.7em';
+    Telegram.style.left = '87.5%';
+    Telegram.style.top = '0.125em';
+}
+Telegram.onclick = () => {
+    window.open('https://t.me/Poofigator');
 }
 
 Cloud.onmouseover = () => {
